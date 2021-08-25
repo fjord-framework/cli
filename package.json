@@ -1,0 +1,22 @@
+{
+  "name": "fjord_cli",
+  "version": "0.1.9",
+  "bin": {
+    "fjord": "./bin/cli.js"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.119.0",
+    "@aws-cdk/aws-ecs": "^1.119.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.119.0",
+    "@aws-cdk/aws-elasticache": "^1.119.0",
+    "@aws-cdk/aws-s3": "^1.114.0",
+    "@aws-cdk/core": "^1.119.0",
+    "asciify-image": "^0.1.6",
+    "clear": "^0.1.0",
+    "cli-progress": "^3.9.0",
+    "colors": "^1.2.1",
+    "ora": "^5.4.1",
+    "promisify-child-process": "^4.1.1",
+    "util": "^0.12.4"
+  }
+}
