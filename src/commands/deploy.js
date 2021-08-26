@@ -59,7 +59,7 @@ module.exports = async () => {
     await deployServer;
     
     // deploying consumer groups
-    consumerGroups.forEach(async consumerGroup => {
+    for (const consumerGroup of consumerGroups) {
       spinner.start(`Deploying fjord-consumer-${consumerGroup.NAME} service...\n`);
 
       const deployConsumer = spawn('cdk', ['deploy', `fjord-consumer-${consumerGroup.NAME}`], {});
@@ -78,7 +78,7 @@ module.exports = async () => {
       });
 
       await deployConsumer;
-    });
+    };
 
   } catch (err) {
     console.log('Error:', err);

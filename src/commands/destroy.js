@@ -20,11 +20,11 @@ module.exports = async (resource_name) => {
         console.log('Resource not found.');
       }
     } else {
-      consumerGroups.forEach(async resourceName => {
-        spinner.start(`Destroying ${resourceName} service...\n`);
-        await exec(`cdk destroy ${resourceName} -f`);
-        spinner.succeed(`${resourceName} service destroyed.\n`);
-      })
+      for (const consumerGroup of consumerGroups) {
+        spinner.start(`Destroying ${consumerGroup} service...\n`);
+        await exec(`cdk destroy ${consumerGroup} -f`);
+        spinner.succeed(`${consumerGroup} service destroyed.\n`);
+      }
     
       spinner.start(`Destroying ${server} service...\n`);
       await exec(`cdk destroy ${server} -f`);

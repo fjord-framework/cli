@@ -1,7 +1,7 @@
 {
   "name": "fjord_cli",
   "description": "A command-line tool for Fjord, a real-time API proxy for Kafka.",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "author": "fjord",
   "bin": {
     "fjord": "./bin/cli.js"
