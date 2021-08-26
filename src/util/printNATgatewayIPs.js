@@ -1,6 +1,6 @@
 const { promisify } = require('util');
 const exec = promisify(require('child_process').exec);
-const getFromOutputs = require("../util/getFromOutputs")
+const getFromOutputs = require("./getFromOutputs");
 
 module.exports = async () => {
   try {

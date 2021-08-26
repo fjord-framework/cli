@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="./readme_materials/fjord.svg" width="500" height="200" />
-</p>
+![Fjord Logo](https://github.com/fjord-framework/cli/blob/main/readme_materials/fjord.svg?raw=true)
 
 [![fjord](https://img.shields.io/badge/fjord-case%20study-33c5ff.svg?color=3152c8&style=plastic)](https://github.com/fjord-framework/fjord-framework.github.io)
 [![npm](https://img.shields.io/npm/v/fjord_cli.svg?color=3152c8&style=plastic)](https://www.npmjs.com/package/fjord_cli)
@@ -122,7 +120,7 @@ DESCRIPTION
       - NAME: name of consumer group
       - KAFKA_TOPICS: space-delimited list of Kafka topics to subscribe to
       - API_TOPICS: space-delimited list of API topics. 1+ Kafka topics can map to a API topic; repeat API topic name to align with Kafka topic name
-      - FROM_BEGINNINGS: boolean, per Kafka topic
+      - FROM_BEGINNINGS: space-delimited list of boolean values per Kafka topic
       - BROKERS: space-delimited list of broker addresses
       - SECURITY: (optional) "SASL-plain" | "none"
       - KAFKA_USERNAME: (optional) username for SASL-plain security option
@@ -135,21 +133,15 @@ _See code: [src/commands/setup.js](https://github.com/fjord-framework/cli/blob/m
 
 ## `fjord deploy`
 
-Deploys a single stack or the entire stack to AWS.
+Deploys the entire stack to AWS.
 
 ```
 USAGE
-  $ fjord deploy <optional: STACKNAME>
-
-OPTIONAL ARGUMENT
-  STACKNAME  Name of stack you would like to deploy.
+  $ fjord deploy
 
 DESCRIPTION
   ...
-  This command takes an optional argument: STACKNAME
-
-  If STACKNAME is supplied, the specified stack will be deployed
-  If no argument is supplied, the entire stack will be deployed
+  Once the entire stack has been deployed, you will find an outputs.json file in the project's directory, containing outputs including the NAT gateway IPs and the load balancer URL.
 ```
 
 _See code: [src/commands/deploy.js](https://github.com/fjord-framework/cli/blob/main/src/commands/deploy.js)_

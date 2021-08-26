@@ -1,6 +1,8 @@
 {
   "name": "fjord_cli",
+  "description": "A command-line tool for Fjord, a real-time API proxy for Kafka.",
   "version": "0.1.9",
+  "author": "fjord",
   "bin": {
     "fjord": "./bin/cli.js"
   },
@@ -18,5 +20,30 @@
     "ora": "^5.4.1",
     "promisify-child-process": "^4.1.1",
     "util": "^0.12.4"
-  }
+  },
+  "homepage": "https://github.com/fjord-framework/cli",
+  "keywords": [
+    "kafka",
+    "api proxy",
+    "fjord"
+  ],
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Austin Miller",
+      "github": "<https://github.com/aumi9292>"
+    },
+    {
+      "name": "Leena Lallmon",
+      "github": "<https://github.com/Leena>"
+    },
+    {
+      "name": "Sophie Chan",
+      "github": "<https://github.com/J-SophieCodes>"
+    },
+    {
+      "name": "Vahid Dejwakh",
+      "github": "<https://github.com/dejwakh>"
+    }
+  ]
 }
