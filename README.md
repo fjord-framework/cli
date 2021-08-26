@@ -131,7 +131,7 @@ DESCRIPTION
       - CONCURRENT_PARTITIONS: (default: "1")
       - STARTING_DELAY_SEC: (default: "0")
 ```
-_See code: [src/commands/setup.js](https://github.com/fjord-framework/cli/src/commands/setup.js)_
+_See code: [src/commands/setup.js](https://github.com/fjord-framework/cli/blob/main/src/commands/setup.js)_
 
 ## `fjord deploy`
 
@@ -152,7 +152,7 @@ DESCRIPTION
   If no argument is supplied, the entire stack will be deployed
 ```
 
-_See code: [src/commands/deploy.js](https://github.com/fjord-framework/cli/src/commands/deploy.js)_
+_See code: [src/commands/deploy.js](https://github.com/fjord-framework/cli/blob/main/src/commands/deploy.js)_
 
 ## `fjord destroy`
 
@@ -173,7 +173,7 @@ DESCRIPTION
   If no argument is supplied, the entire stack will be destroyed
 ```
 
-_See code: [src/commands/destroy.js](https://github.com/fjord-framework/cli/src/commands/destroy.js)_
+_See code: [src/commands/destroy.js](https://github.com/fjord-framework/cli/blob/main/src/commands/destroy.js)_
 
 ## `fjord endpoints`
 
@@ -192,7 +192,7 @@ DESCRIPTION
     - URL for client side application to receive Fjord stream via SSE
 ```
 
-_See code: [src/commands/endpoints.js](https://github.com/fjord-framework/cli/src/commands/endpoints.js)_
+_See code: [src/commands/endpoints.js](https://github.com/fjord-framework/cli/blob/main/src/commands/endpoints.js)_
 
 ## `fjord help`
 
@@ -203,6 +203,6 @@ USAGE
   $ fjord help
 ```
 
-_See code: [src/commands/help.js](https://github.com/fjord-framework/cli/src/commands/help.js)_
+_See code: [src/commands/help.js](https://github.com/fjord-framework/cli/blob/main/src/commands/help.js)_
 
 <!-- commandsstop -->
