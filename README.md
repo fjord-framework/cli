@@ -5,23 +5,26 @@
 [![Downloads/week](https://img.shields.io/npm/dw/fjord_cli.svg?color=3152c8&style=plastic)](https://npmjs.org/package/fjord_cli)
 [![license](https://img.shields.io/npm/l/nami-serverless.svg?color=3152c8&style=plastic)](https://www.npmjs.com/package/fjord_cli)
 
-
 # Fjord-cli
 
 Fjord is a real-time API proxy for Kafka.
 
 Use the Fjord cli tool to deploy the Fjord framework and manage your AWS infrastructure.
 
+If you wish to see the Fjord deployment code without the CLI, please see the [deploy repo](https://github.com/fjord-framework/cli). If you wish to interact with the individual components locally, please see the [Fjord Organization](https://github.com/fjord-framework) and navigate to the repo that corresponds with the component you want to see.
+
 <!-- toc -->
-* [Usage](#usage)
-* [Getting Started](#getting-started)
-* [FAQ](#faq)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Getting Started](#getting-started)
+- [FAQ](#faq)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g fjord_cli
 
@@ -29,6 +32,7 @@ $ fjord COMMAND
 running command...
 
 ```
+
 <!-- usagestop -->
 
 # Getting Started
@@ -86,11 +90,12 @@ To uninstall / remove the Fjord cli tool, run `npm uninstall -g fjord_cli`.
 # Commands
 
 <!-- commands -->
-* [`fjord setup`](#fjord-setup)
-* [`fjord deploy`](#fjord-deploy)
-* [`fjord destroy`](#fjord-destroy)
-* [`fjord endpoints`](#fjord-endpoints)
-* [`fjord help`](#fjord-help)
+
+- [`fjord setup`](#fjord-setup)
+- [`fjord deploy`](#fjord-deploy)
+- [`fjord destroy`](#fjord-destroy)
+- [`fjord endpoints`](#fjord-endpoints)
+- [`fjord help`](#fjord-help)
 
 ## `fjord setup`
 
@@ -129,6 +134,7 @@ DESCRIPTION
       - CONCURRENT_PARTITIONS: (default: "1")
       - STARTING_DELAY_SEC: (default: "0")
 ```
+
 _See code: [src/commands/setup.js](https://github.com/fjord-framework/cli/blob/main/src/commands/setup.js)_
 
 ## `fjord deploy`
