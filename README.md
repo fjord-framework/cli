@@ -5,7 +5,7 @@
 [![Downloads/week](https://img.shields.io/npm/dw/fjord_cli.svg?color=3152c8&style=plastic)](https://npmjs.org/package/fjord_cli)
 [![license](https://img.shields.io/npm/l/nami-serverless.svg?color=3152c8&style=plastic)](https://www.npmjs.com/package/fjord_cli)
 
-# Fjord-cli
+# Fjord_cli
 
 Fjord is a real-time API proxy for Kafka.
 
